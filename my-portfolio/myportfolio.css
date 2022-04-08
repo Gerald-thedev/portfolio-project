@@ -100,7 +100,7 @@ html, body {
 
 .section1 {
     background-color: white;
-    border: 2px solid black;
+    border: 2px solid white;
 }
 
 .section2 {
@@ -126,12 +126,12 @@ html, body {
 .email-dev {
     font-size: 2.8rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: crimson;
     position: relative;
     top: 1.4rem;
     left: 2.5rem;
     word-spacing: 0.6rem;
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.2rem;
     animation-name: email-dev;
     animation-delay: 0.3s;
     animation-duration: 3s;
@@ -190,12 +190,13 @@ html, body {
     color: white;
     padding: 15px 25px;
     position: relative;
+    border-radius: 10px;
     left: 13rem;
     top: 1rem;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
-    box-shadow: 2px 2px 15px 5px black;
+    box-shadow: 3px 3px 15px 1px skyblue;
     transition-delay: 0.1s;
     transition-duration: 0.5s;
 }
@@ -236,7 +237,6 @@ html, body {
 }
 
 .about-me {
-    border: 2px solid black;
     height: 100vh;
     margin-top: 3.5rem;
     background-color: white;
@@ -245,6 +245,8 @@ html, body {
 
 .section1 h2 {
     text-align: center;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .horizontal-line {
@@ -263,7 +265,7 @@ html, body {
     margin-left: 4rem;
     margin-top: 2.5rem;
     line-height: 1.3rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 .abt-img {
     width: 35rem;
@@ -271,7 +273,29 @@ html, body {
     height: auto;
     float: right;
     margin-right: 5rem;
-    margin-top: -28rem;
+    margin-top: -30rem;
     border: none;
     border-radius: 50%;
+}
+
+.abt-btn {
+    float: right;
+    margin-right: 15.5rem;
+    margin-top: -4rem;
+}
+
+.cv-btn {
+    padding: 0.5rem 2.5rem;
+    background-color: crimson;
+    color: white;
+}
+
+.contact-btn {
+    padding: 0.5rem 2rem;
+    background-color: white;
+    color: crimson;
+}
+
+.contact-b {
+    padding-left: 1rem;
 }
