@@ -9,7 +9,6 @@ html, body {
 .menu {
     background-color: crimson;
     padding: 10px 0;
-    position: fixed;
     width: 100%;
     z-index: 8;
 
@@ -52,8 +51,9 @@ html, body {
     cursor: pointer;
     display: inline-block;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
     transition-delay: 0.02s;
-    transition-duration: 0.8s;
+    transition-duration: 0.5s;
     position: relative;
     top: -0.5rem;
 }
@@ -75,21 +75,37 @@ html, body {
 
 .section0, .section1, .section2, .section3, .section4 {
     min-height: 100vh;
+    min-width: 100%;
+    box-sizing: border-box;
 
     
 }
 
 .section0 {
-    background-color: aqua;
-    background-image: url("images/woodbg.jpg");
+    background-image: url("images/directionbg.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
+    padding-top: 8rem;
+    animation-name: section-zero;
+    animation-delay: 0.3s;
+    animation-duration: 3s;
+}
+@keyframes section-zero {
+    from {
+        transform: translateY(-4px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .section1 {
-    background-color: crimson;
+    background-color: white;
+    border: 2px solid black;
 }
 
 .section2 {
@@ -107,27 +123,42 @@ html, body {
 .content-info {
     width: 45%;
     height: 25rem;
-    border: 1px solid black;
-    box-shadow: 2px 2px 10px 4px white;
-    position: relative;
-    top: 4rem;
-    left: 5rem;
+    margin-top: -3.5rem;
+    margin-left: 2rem;
     z-index: 1;
 }
 
 .email-dev {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: crimson;
+    color: white;
+    position: relative;
+    top: 1.4rem;
+    left: 2.5rem;
     word-spacing: 0.6rem;
     letter-spacing: 0.4rem;
+    animation-name: email-dev;
+    animation-delay: 0.3s;
+    animation-duration: 3s;
+}
+@keyframes email-dev {
+    from {
+        transform: translateY(-700px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .name {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    margin-top: 0.4rem;
+    margin-left: 9.5rem;
     word-spacing: 0.4rem;
     letter-spacing: 0.2rem;
 }
@@ -138,16 +169,118 @@ html, body {
 
 .ddt {
     color: white;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    position: relative;
+    left: 4.5rem;
+    animation-name: ddt;
+    animation-delay: 0.3s;
+    animation-duration: 3s;
+}
+@keyframes ddt {
+    from {
+        transform: translateY(400px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .project-btn {
     background-color: crimson;
+    color: white;
     padding: 15px 25px;
     position: relative;
-    left: 4.3rem;
+    left: 13rem;
     top: 1rem;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
+    box-shadow: 2px 2px 15px 5px black;
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+}
+.project-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: crimson;
+    opacity: 0.8;
+    color: black;
+}
+
+.profile-pic {
+    width: 25rem;
+    max-width: 100%;
+    height: 25rem;
+    float: right;
+    display: block;
+    margin-top: -25rem;
+    margin-right: 5rem;
+    border: none;
+    background-image: url("images/mrgeraldpropic.jpg");
+    background-position: top center;
+    background-size: cover;
+    border-radius: 50%;
+    animation-name: profile-pic;
+    animation-delay: 0.3s;
+    animation-duration: 3s;
+}
+@keyframes profile-pic {
+    from {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.about-me {
+    border: 2px solid black;
+    height: 100vh;
+    margin-top: 3.5rem;
+    background-color: white;
 }
 
 
+.section1 h2 {
+    text-align: center;
+}
+
+.horizontal-line {
+    background-color: crimson;
+    height: 2px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.abt-content {
+    border: 2px solid crimson;
+}
+.abt-text {
+    width: 40%;
+    margin-left: 4rem;
+    margin-top: 2.5rem;
+    line-height: 1.3rem;
+    font-size: 1.1rem;
+}
+.abt-img {
+    width: 35rem;
+    max-width: 100%;
+    height: auto;
+    float: right;
+    /* display: inline; */
+    /* margin-top: -25rem; */
+    margin-right: 5rem;
+    margin-top: -28rem;
+    border: none;
+    /* background-image: url("images/mrgeraldpropic.jpg"); */
+    
+    border-radius: 50%;
+}
