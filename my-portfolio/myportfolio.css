@@ -1,0 +1,100 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+    scroll-behavior: smooth;
+}
+
+
+.menu {
+    background-color: crimson;
+    padding: 10px 0;
+
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+.menu ul li {
+    list-style-type: none;
+    margin: 0 10px;
+    display: inline;
+    position: relative;
+    top: 0.2rem;
+}
+.github {
+    position: relative;
+    right: 2rem;
+    top: 0.5rem!important;
+}
+.linkedin {
+    position: relative;
+    top: 0.5rem!important;
+
+}
+
+.menu ul li a {
+    font-size: 1rem;
+    line-height: 1rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    font-weight: bold;
+    transition-delay: 0.02s;
+    transition-duration: 0.8s;
+    position: relative;
+    top: -0.5rem;
+}
+
+.menu ul li a:hover {
+    color: black;
+    transform: scale(1.1);
+}
+
+.main-heading {
+    margin-right: 25rem!important;
+}
+
+.portfo {
+    font-size: 2rem!important;
+    position: relative;
+    top: -0.2rem!important;
+}
+
+.section0, .section1, .section2, .section3, .section4 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section0 {
+    background-color: aqua;
+}
+
+.section1 {
+    background-color: crimson;
+}
+
+.section2 {
+    background-color: yellow;
+}
+
+.section3 {
+    background-color: orangered;
+}
+
+.section4 {
+    background-color: seagreen;
+}
+
+
+
