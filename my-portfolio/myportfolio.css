@@ -5,7 +5,6 @@ html, body {
     scroll-behavior: smooth;
 }
 
-
 .menu {
     background-color: crimson;
     padding: 10px 0;
@@ -28,11 +27,13 @@ html, body {
     margin-left: 1rem;
     padding: 15px 20px;
 }
+
 .github {
     position: relative;
-    right: 2rem;
+    right: 3rem;
     top: 0.5rem!important;
 }
+
 .linkedin {
     position: relative;
     top: 0.5rem!important;
@@ -68,6 +69,7 @@ html, body {
     font-size: 2rem!important;
     position: relative;
     top: -0.2rem!important;
+    color: white;
 }
 
 .section0, .section1, .section2, .section3, .section4 {
@@ -278,9 +280,9 @@ html, body {
     border-radius: 50%;
 }
 
-.abt-btn {
+.abt-btns {
     float: right;
-    margin-right: 15.5rem;
+    margin-right: 14rem;
     margin-top: -4rem;
 }
 
@@ -288,12 +290,28 @@ html, body {
     padding: 0.5rem 2.5rem;
     background-color: crimson;
     color: white;
+    font-weight: bold;
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+}
+.cv-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    color: black;
 }
 
 .contact-btn {
     padding: 0.5rem 2rem;
     background-color: white;
     color: crimson;
+    font-weight: bold;
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+}
+.contact-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    color: black;
 }
 
 .contact-b {
