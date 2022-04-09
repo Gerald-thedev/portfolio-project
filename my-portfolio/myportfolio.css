@@ -1,7 +1,6 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: burlywood;
     scroll-behavior: smooth;
 }
 
@@ -106,7 +105,7 @@ html, body {
 }
 
 .section2 {
-    background-color: yellow;
+    background-color:rgb(250, 241, 224);
 }
 
 .section3 {
@@ -238,13 +237,6 @@ html, body {
     }
 }
 
-.about-me {
-    height: 100vh;
-    margin-top: 3.5rem;
-    background-color: white;
-}
-
-
 .section1 h2 {
     text-align: center;
     font-size: 1.4rem;
@@ -304,7 +296,7 @@ html, body {
     padding: 0.5rem 2rem;
     background-color: white;
     color: crimson;
-    font-weight: bold;
+    font-weight: bolder;
     transition-delay: 0.1s;
     transition-duration: 0.5s;
 }
@@ -316,4 +308,84 @@ html, body {
 
 .contact-b {
     padding-left: 1rem;
+}
+
+.section2 h2 {
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 1rem;
+}
+
+.skills-leftside {
+    max-width: 40%;
+    border: 2px solid crimson;
+    margin-left: 5rem;
+    margin-top: 6rem;
+    padding-right: 1rem;
+}
+
+.skills-leftside li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.skills-rightside {
+    width: 30rem;
+    border: 2px solid crimson;
+    float: right;
+    margin-right: 5rem;
+    margin-top: -22rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.skills-rightside li {
+    margin: 20px 0;
+    list-style-type: none;
+}
+
+.bar {
+    background-color: black;
+    display: block;
+    height: 6px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px gray;
+    transition-duration: 0.2s;
+}
+.bar:hover {
+    transform: scale(1.02);
+}
+
+.bar span {
+    height: 6px;
+    float: left;
+    background-color: crimson;
+}
+
+.html-skill {
+    width: 90%;
+}
+
+.css-skill {
+    width: 70%;
+
+}
+
+.git-skill {
+    width: 65%;
+}
+
+.github-skill {
+    width: 60%;
+}
+
+.skill-label {
+    position: relative;
+    top: -9px;
+    font-family: Arial, Helvetica, sans-serif;
 }
